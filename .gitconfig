@@ -1,0 +1,14 @@
+[user]
+  name = Leo Shaw
+  email = leo@leoshaw.co.uk
+[alias]
+  st = status
+  pr = pull --rebase
+  co = checkout
+  pick = cherry-pick
+[merge]
+  conflictstyle = diff3
+[rerere]
+  enabled = true
+[push]
+  default = current
