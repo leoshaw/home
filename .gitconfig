@@ -6,9 +6,12 @@
   pr = pull --rebase
   co = checkout
   pick = cherry-pick
+  ignored = !git ls-files -v | grep "^[[:lower:]]"
 [merge]
   conflictstyle = diff3
 [rerere]
   enabled = true
 [push]
   default = current
+[core]
+	autocrlf = true
