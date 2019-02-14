@@ -2,6 +2,7 @@
   name = Leo Shaw
   email = leo@leoshaw.co.uk
 [alias]
+  ff = merge --ff-only
   st = status
   pr = pull --rebase
   co = checkout
