@@ -1,4 +1,4 @@
-\.bundler/
-\.bundle
-\.*_history
-\.gem/
+.DS_Store
+*.swp
+*.swo
+.netrwhist
