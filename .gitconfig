@@ -1,6 +1,7 @@
 [user]
   name = Leo Shaw
   email = leo@leoshaw.co.uk
+	signingkey = 09BE80BDDD94BC60
 [alias]
   ff = merge --ff-only
   st = status
@@ -8,7 +9,7 @@
   co = checkout
   pick = cherry-pick
   ignored = !git ls-files -v | grep "^[[:lower:]]"
-  cleanup = "!git branch --merged master | grep  -v '\\*\\|master\\|develop' | xargs -n 1 git branch -d"
+  cleanup = "!git branch --merged main | grep  -v '\\*\\|main\\|develop' | xargs -n 1 git branch -d"
 [merge]
   conflictstyle = diff3
 [rerere]
@@ -17,3 +18,7 @@
   default = current
 [core]
   autocrlf = false
+[commit]
+	gpgsign = true
+[init]
+	defaultBranch = main
